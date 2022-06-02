@@ -420,16 +420,16 @@ div h2 {
         font-size: 0.9rem;
         /* padding: 0 10px; */
         padding-right: 0px;
-        padding-left: 5px;
+        padding-left: 10px;
         /* margin: 0 auto; */
     }
     #slider {
         height: auto;
         padding-top: 5px;
     }
-    .menu div:nth-child(5) a {
+    /* .menu div:nth-child(5) a {
         padding-right: 4px;
-    }
+    } */
     .description,
     .aboutme {
         padding: 0;
