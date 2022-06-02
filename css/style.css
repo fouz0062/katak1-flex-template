@@ -186,7 +186,7 @@ div h2 {
 }
 
 .flex5 p {
-    line-height: 1.5;
+    line-height: 1.57;
 }
 
 
@@ -211,12 +211,15 @@ div h2 {
 } */
 
 .grid1 {
-    display: inline-block;
-    margin: 5px auto;
+    /* display: inline-block;
+    margin: 5px auto; */
 }
 
 .grid1 div {
     float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .grid1 div:nth-child(2) {
@@ -225,6 +228,7 @@ div h2 {
 
 .grid1 p a {
     color: red;
+    line-height: 2;
 }
 
 .h2 {
@@ -289,19 +293,35 @@ div h2 {
     .container2 {
         width: 90%;
         text-align: center;
+        margin: 0 auto;
     }
-    .logo,
+    .logo {
+        width: 20%;
+    }
     .welcome,
     .description {
         width: 100%;
     }
+    .logo,
     .menu {
-        width: 100%;
-        justify-content: space-between;
+        align-self: center;
     }
-    .menu div:first-child {
+    .menu {
+        width: 80%;
+        justify-content: flex-end;
+        align-content: center;
+        margin-top: -6px;
+    }
+    .menu div {
+        font-size: 1rem;
+        padding: 0;
+        padding-left: 10px;
+        margin: 0;
+        align-self: center;
+    }
+    /* .menu div:first-child {
         padding-left: 0;
-    }
+    } */
     #slider {
         height: auto;
         padding-top: 5px;
@@ -319,7 +339,7 @@ div h2 {
     .flex4 div:first-child,
     .flex4 div:last-child,
     .flex5 div:first-child,
-    .flex5 div:last-child {
+    .flex5 div:last-child:first-child {
         width: 100%;
     }
     .aboutme>p {
@@ -335,17 +355,28 @@ div h2 {
         margin-top: 40px;
         padding-right: 0px;
     }
+    /* .flex5 img {
+        width: 100%;
+        height: auto;
+    } */
     .grid1 {
         display: flex;
-        justify-content: center;
-    }
-    .grid1 div {
-        width: 50%;
+        width: 70% !important;
+        margin: 0 auto;
+        gap: 0 20%;
+        margin-left: 18%;
     }
     .grid1 div p {
         text-align: left;
-        padding-left: 70px;
+        padding: 0;
+        font-size: 1.1rem;
     }
+    .grid1 div:nth-child(2) {
+        padding: 0;
+    }
+    /* .grid1>div {
+        padding: 0 10px;
+    } */
     .grid6 {
         grid-template-columns: auto auto auto;
     }
@@ -367,9 +398,9 @@ div h2 {
 @media only screen and (max-width:375px) {
     .container,
     .container2 {
-        width: 100%;
-        /* margin: 0%;
-        padding: 0%; */
+        width: 95%;
+        margin: 0 auto;
+        /* padding: 0%; */
     }
     .flex {
         justify-content: flex-start;
@@ -381,14 +412,15 @@ div h2 {
     }
     .menu {
         width: 80%;
-        margin-top: -2px;
+        margin-top: -4px;
         justify-content: flex-end;
     }
     .menu div {
         /* width: 20%; */
-        font-size: 1rem;
-        padding: 0 10px;
+        font-size: 0.9rem;
+        /* padding: 0 10px; */
         padding-right: 0px;
+        padding-left: 5px;
         /* margin: 0 auto; */
     }
     #slider {
@@ -418,10 +450,12 @@ div h2 {
     .aboutme>p {
         border-right: 1px solid rgb(100, 97, 97);
         border-left: 1px solid rgb(100, 97, 97);
-    }
-    .aboutme p:nth-child(2) {
         padding: 0 2px;
+        font-size: 0.9rem;
     }
+    /* .aboutme p:nth-child(2) {
+        padding: 0 2px;
+    } */
     .flex5 .aboutme {
         margin-top: 40px;
     }
