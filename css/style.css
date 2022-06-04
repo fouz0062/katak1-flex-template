@@ -324,6 +324,7 @@ div h2 {
     } */
     #slider {
         height: auto;
+        width: 100%;
         padding-top: 5px;
     }
     .flex2 div:last-child {
@@ -425,6 +426,7 @@ div h2 {
     }
     #slider {
         height: auto;
+        width: 100%;
         padding-top: 5px;
     }
     /* .menu div:nth-child(5) a {
